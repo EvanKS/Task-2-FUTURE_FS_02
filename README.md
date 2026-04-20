@@ -1,79 +1,127 @@
-# Mini CRM - Client Lead Management System
+# 🚀 Mini CRM (Client Lead Management System)
 
-A modern, professional full-stack Mini CRM web application designed to manage leads collected from website contact forms. This application provides ad dashboard for admins to authenticate and manage their incoming clients seamlessly.
+## 📌 Overview
 
-## 🌟 Features
+Mini CRM is a full-stack web application designed to help businesses manage client leads efficiently. It allows users to store, track, and update leads generated from website contact forms, simulating real-world business workflows.
 
-- **Secure Admin Authentication**: JWT-based login for protected routes.
-- **Lead Dashboard**: View all incoming leads in a clean, comprehensive table.
-- **Lead Metrics**: Real-time stats on total leads, new leads, converted leads, and conversion rates.
-- **Lead Details & Notes**: Click into a single lead to see all details and add timestamped follow-up notes in a timeline view.
-- **Status Workflows**: Update lead status (New, Contacted, Converted).
-- **Responsive Layout**: Designed to work on desktop and tablet perfectly.
-- **Dark Mode**: Effortless toggle for dark/light themes.
-- **Clean UI**: Built with pure modern Vanilla CSS for maximum performance, featuring soft colors, hover effects, CSS variables, and clean component structure.
+---
 
-## 🧱 Tech Stack
+## ✨ Features
 
-- **Frontend**: React.js, React Router, Vite, Axios, Lucide-React for icons, Custom CSS
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB (Mongoose ODM)
-- **Security**: JWT, bcryptjs
+* 📋 Add and manage client leads
+* 🔄 Update lead status (New / Contacted / Converted)
+* 📝 Add notes and follow-ups for each lead
+* 🔍 Search and filter leads
+* 📊 Dashboard view for lead tracking
+* 🔐 (Optional) Admin authentication
 
-## 🚀 Setup Instructions
+---
 
-### Prerequisites
-- Node.js installed (v16+ recommended)
-- MongoDB instance (Local or Atlas) locally running on port 27017 or adjust `.env`.
+## 🛠️ Tech Stack
 
-### 1. Backend Setup
+**Frontend:**
 
-1. Open a terminal and navigate to the `backend` folder:
-   ```bash
-   cd backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Create a `.env` file in the `backend` directory (already provided in the repository) and configure your MongoDB connection if different:
-   ```env
-   MONGO_URI=mongodb://127.0.0.1:27017/minicrm
-   JWT_SECRET=supersecretkey
-   PORT=5000
-   ```
-4. Start the backend development server:
-   ```bash
-   npm run dev
-   ```
+* React.js
+* HTML, CSS, JavaScript
 
-### 2. Frontend Setup
+**Backend:**
 
-1. Open a new terminal and navigate to the `frontend` folder:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the Vite development server:
-   ```bash
-   npm run dev
-   ```
+* Node.js
+* Express.js
 
-### 3. Usage & Access
+**Database:**
 
-- The application falls back to `mock data` if the backend is unavailable or empty. 
-- You can register a mock admin through Postman with `POST http://localhost:5000/api/auth/register` passing `name`, `email` and `password`.
-- Login with the registered credentials or use any credentials to leverage the frontend's mock functionalities (Note: The mock login handles graceful failure for demo purposes).
+* MongoDB
+
+---
+
+## 📂 Project Structure
+
+```
+mini-crm/
+│
+├── backend/        # API and server logic
+├── frontend/       # React UI
+├── .gitignore
+└── README.md
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 🔹 1. Clone the repository
+
+```
+git clone https://github.com/EvanKS/Task-2-FUTURE_FS_02.git
+cd Task-2-FUTURE_FS_02
+```
+
+---
+
+### 🔹 2. Setup Backend
+
+```
+cd backend
+npm install
+npm run dev
+```
+
+---
+
+### 🔹 3. Setup Frontend
+
+```
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🌐 Environment Variables
+
+Create a `.env` file in the backend folder and add:
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+```
+
+---
+
+## 💼 Use Case
+
+This project demonstrates how businesses:
+
+* Capture leads from websites
+* Track communication status
+* Manage follow-ups
+* Convert leads into clients
+
+---
 
 ## 📸 Screenshots
 
-*(To be added)*
-- Dashboard Overview
-- Lead Details & Timeline
-- Dark Mode Interface
+*(Add your project screenshots here for better presentation)*
 
 ---
-**Designed and built as a modern, scalable web app.**
+
+## 🚀 Future Improvements
+
+* Authentication system
+* Email notifications
+* Advanced analytics dashboard
+* Deployment (Vercel + Render)
+
+---
+
+## 👨‍💻 Author
+
+**Evan KS**
+
+---
+
+## ⭐ Acknowledgement
+
+This project was built as part of a Full Stack Web Development internship task to simulate real-world client management systems.
